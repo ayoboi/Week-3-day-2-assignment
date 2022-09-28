@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css" />
+    <style>
+      .dr {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="registration.html">
+      <fieldset>
+        <legend>MEDICAL FORM</legend>
+        <div class="box">
+          <div class="box1">
+            <label for="text-input">Race name:</label>
+            <input type="text" name="text-input" id="text-input" />
+          </div>
+          <div class="box2">
+            <label for="number-input">Race number:</label>
+            <input type="number" name="number-input" id="number-input" />
+          </div>
+        </div>
+
+        <div class="header">
+          <h2>MEDICAL CERTIFICATE</h2>
+          <p class="content">
+            I, the undersigned Dr <input class="dr" type="text" />, Doctor of
+            Medicine, <br />
+            <br />
+            Certify that the examination of Mr/Ms
+            <input class="dr" type="text" /> <br />
+            <br />Date of birth: <input class="dr" type="text" />, Age:
+            <input class="dr" type="number" /> <br />
+            <br />
+            reveals no contraindications for participating in running
+            competitions. <br />
+            <br />
+            <br /><br />
+            Medical certificate issued in (place):
+            <input class="dr" type="text" /> <br />
+            <br /><br /><br />
+            <br />
+            Date: <input class="dr" type="datetime-local" /> Doctor's sign:
+            <input class="dr" type="text" />
+          </p>
+          <p class="stamp">Doctor's Stamp:</p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>ADDITIONAL INFO</legend>
+        <div class="additional-details">
+          <label for="email-input">Email: </label>
+          <input class="inputss" type="email"  name="email-input" id="email-input" readonly/>
+          <br />
+
+          <label for="password-input">Password: </label>
+          <input class="inputss" type="password" name="password-input" id="password-input"/>
+          <br />
+
+          <label for="username-input">Username: </label>
+          <input class="inputss" type="text" name="username-input" id="username-input"/>
+          <br />
+        </div>
+
+        <div class="gender">
+          <p>Gender:</p>
+          <label for="Male ">Male</label>
+          <input type="radio" name="gender" id="male" />
+
+          <label for="female ">Female</label>
+          <input type="radio" name="gender" id="gender-input" />
+
+          <label for="prefer not to say ">Prefer not to say</label>
+          <input type="radio" name="gender" id="gender-input" />
+        </div>
+
+        <div class="nationality">
+        <label for="">Nationality:</label>
+        <select name="nationality" id="nationality">
+          <option value="">...</option>
+          <option value="algerian">Algerian</option>
+          <option value="nigerian" selected>Nigerian</option>
+          <option value="american">American</option>
+          <option value="sweedish">Sweedish</option>
+          <option value="finnish">Finnish</option>
+          <option value="brazilian">Brazilian</option>
+        </select>
+    </div>
+        <br /><br /><br />
+
+        <label for="feedback">Feedback</label>
+        <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+   
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>

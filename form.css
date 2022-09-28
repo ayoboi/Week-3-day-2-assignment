@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box input{
+    padding: 16px;
+    margin: 10px;
+}
+.box1{
+    display: flex;
+    justify-content: end;
+    align-items:baseline;
+}
+.box2{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+}
+
+.header h2{
+    text-align: center;
+    margin: 30px;
+}
+.content{
+    padding: 20px;
+}
+P{
+    display: block;
+    /* float: left; */
+    justify-content: space-evenly;
+}
+
+.stamp{
+    text-align: center;
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+.inputss{
+    /* margin: 5px; */
+    gap: 10px;
+    display: block;
+}
+div.gender{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    gap: 5px;
+}
+
+
+div.additional-details{
+    margin: 30px;
+}
+.nationality{
+    margin: 10px;
+    /* padding: 20px; */
+}
+textarea{
+    resize: none;
+}
